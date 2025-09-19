@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ready Signal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Ready Signal</h1>
+        <div class="status-container">
+            <div class="user" id="user1">
+                <div class="circle" id="circle1"></div>
+                <p>Person 1</p>
+                <button id="toggle1" class="toggle-btn">I'm Ready</button>
+            </div>
+            <div class="user" id="user2">
+                <div class="circle" id="circle2"></div>
+                <p>Person 2</p>
+                <button id="toggle2" class="toggle-btn">I'm Ready</button>
+            </div>
+        </div>
+        <div id="message" class="message"></div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
